@@ -1,0 +1,19 @@
+{
+    "name"   : "phplegends/legion-framework",
+    "keywords" : ["framework", "phplegends", "legion"],
+    "authors" : [
+        {
+            "name" : "Wallace de Souza",
+            "email" : "wallacemaxters@gmail.com"
+        }
+    ],
+    "require": {
+        "phplegends/legion": "dev-master"
+    },
+
+    "autoload" : {
+        "psr-4" : {
+            "App\\" :  "app/"
+        }
+    }
+}

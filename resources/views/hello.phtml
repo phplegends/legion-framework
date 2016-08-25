@@ -1,0 +1,28 @@
+<?php $favicon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADO0lEQVR42m2TX0hTcRTHv/dubcjURDcls2msSa2HFVsbEZk1kYJu2dJsr6kM/z1U9FA9lNJLBEagUlREWIH6IrMFbhNRBEMRTMXltLRrNvyTzrS5dN51rqFodeA83N/9nc/3nPM7h8FfptFoZMnJyed0Ol2WWq3eyzAMeJ4f83q9Hr/f7/D5fCtb7zNbPywWC0dWrZfL1UxPDzA+vn7OpqoRMR5BXzjMO53OMpfL1fwP4GJu7rVCq/WBUFPDKilQFRcHCakLS0vAzp2Y9vsR0GjAlJUJzx2OG/X19VWbgMzMTO56QUET7txl90QrMB0TAyEUQmRxEfsJwCgUEORyLAoCvi0vAxUVQlVdXY7b7W5m0tLSZHa7feSA06lO9PkQGxuLT1evwnD+PL729iKppAQSlQqrBAuGw/gZDGKeMhm4cIF/+uyZljGbzbm38vMbZZWV2J2QACmpTd68iaMch7GODkQXFgKU0TKpC5EI1ggwRVkIt2/jXlNTHmOz2R7bduywx7x9CyXVLV6ae/gQR7Ky8Lm1FVFFRQhLpViTSBChf5G1NQRWVrB8+jResewTpry8vOXk4GC2qr8fcTIZBFL68eIFDmdkYMzjQWJBAcLUzF/kIfIwy2KJSpnX6eAxGFxMcXFxi8XrzU4aGICKVCSkMP3mDfTHjmGcAGlXrkCgRq+S/6Rg0edJ5DsBXHq9i7FarY/zpVJ7stuNVALI6Ofo69c4dPw4FmZm0Nfejggpg1x5/z52TU1hku7MWiyoA54wBoMhtyg7u1FfWwstAaRU54eXL2E4dWrbhIr1fzlzBklDQ/hEgBF6nerW1jwmJSVFdpbjRi719qoPDQ9DTim2lZZCYzb/iVyl5MW3p2dkHz1CIg3UsFaLVyYT73z3Trs+SCaTics5caLpckMDm7iwAJYg/zOxwQGakwabTWjs6Mjp6upq3hxlmsZrmXr9A66zk9WOjkJCEHGRNtIXgyf27YMjI0No6eu70dbWVrVtF0QzGo1cenp6tTEqSn2Q55EQCKxD5mkXPqam4n0oxNM2lnV3d/+7TBsm9kSpVJ6Lj4/PUigUe8WzYDA4Njc355mdnXVMTExsW+ffsOdeUfdtBg0AAAAASUVORK5CYII='; 
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legion Framework | Hello!</title>
+    <link rel="icon" type="text/image" href="<?= $favicon ?>">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="page-header">
+            <h1 class="page-title"><?= $framework ?></h1>
+        </header>
+        <section style="min-height: 400px">
+            <h3>Welcome!</h3>
+            <p>Welcome to the Legion Framework!</p>
+            <p>The <strong>Legion Framework</strong> is a microframework developed by <a href="https://github.com/phplegends">PhpLegends</a> team.</p>
+            <p>You are showing this page because it was defined in app/routes.php. See below:</p>
+
+            <pre><?= htmlentities(file_get_contents(APP_PATH . '/routes.php')) ?></pre>
+        </section>
+        <footer class="text-right">
+            Special thanks to <a href="https://github.com/brcontainer">BrContainer</a>
+        </footer>
+    </div>
+</body>
+</html>
