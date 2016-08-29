@@ -9,14 +9,17 @@ cd project-name
 
 composer install
 
-php -S localhost:8000 -t web
+```
+
+Run the PHP built-in server to test your application:
+
+
+```bash
+php -S localhost:8000 -t web/
 
 ```
 
-
-Now, access http://localhost:8000.
-
-
+Now, access [localhost:8000](http://localhost:8000).
 
 #Define your own route
 
@@ -29,4 +32,9 @@ $router->get('/my-route', function () {
 })
 ```
 
-Test it in  http://localhost:8000/my-route
+Test it in  [localhost:8000/my-route](http://localhost:8000/my-route)
+
+
+
+The application folder is `web`. You can store your assetics files inside this folder.
+
