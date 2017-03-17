@@ -28,7 +28,7 @@ Define your own route
 In `app/routes.php`, add the follow code:
 
 ```php
-$router->get('/my-route', function () {
+$router->get('/my-route', function ($request, $response) {
 
     return $response->create('Hello World!');
 })
