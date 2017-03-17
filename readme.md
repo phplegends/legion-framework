@@ -1,4 +1,5 @@
-#Legion Framework
+Legion Framework
+----
 
 For install, use the follow command:
 
@@ -21,7 +22,8 @@ php -S localhost:8000 -t web/
 
 Now, access [localhost:8000](http://localhost:8000).
 
-#Define your own route
+Define your own route
+---
 
 In `app/routes.php`, add the follow code:
 
