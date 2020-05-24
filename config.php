@@ -6,6 +6,15 @@ return [
     
     'base_url' => '',
 
+
+    'error_handler' => \App\Errors\Handler::class,
+
+    /*
+     * Controller class used in Closure contexts 
+     * */
+
+    'fallback_controller' => \App\Controllers\Controller::class,
+
     // Session config section
 
     'session' => [
