@@ -15,8 +15,8 @@ use PHPLegends\Routes\UrlGenerator;
 if (empty($config['debug'])) {
     error_reporting(0);
 } else {
-    error_reporting(1);
     ini_set('display_errors', 'On');
+    error_reporting(1);
 }
 
 $request = Request::createFromGlobals();
@@ -26,6 +26,8 @@ $view = new View\Factory(
 );
 
 $view->getData()->define('URL', new UrlGenerator($router, $config['base_url']));
+$view->getData()->define('CONFIG', $config);
+
 
 if (isset($config['session']['handler'])) 
 {

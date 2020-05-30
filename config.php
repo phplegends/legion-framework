@@ -2,6 +2,8 @@
 
 return [
     
+    'name'     => 'Legion',
+
     'debug'    => true,
     
     'base_url' => '',
